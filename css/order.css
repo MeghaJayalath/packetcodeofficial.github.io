@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Kanit:wght@500&family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-container{
+    width: 100%;
+    height: 18vh;
+    background: #e9d6cd;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    top: 1%;
+    left: 27%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: -26%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+header ul li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-size: 20px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    letter-spacing: 2px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    color: rgb(255, 53, 17);
+}
+
+.body-container{
+    display:flex;
+    height: 190vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    position: fixed;
+    top: 0%;
+    object-fit: cover;
+    width: 100%;
+    height: 120%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+/* form css */
+.container{
+    height: 85%;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(2, 2, 2, 0.542);
+    padding: 25px 30px;
+    border-radius: 5px;
+    top: -9%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: white;
+}
+
+.title{
+    font-size:25px;
+    font-weight: 700
+}
+
+.customer-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box{
+    margin-bottom: 15px;
+    width: 20%;
+}
+
+.box1{
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    top: 55%;
+    right: 100%;
+}
+
+.box1 input{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(219, 216, 216);
+    padding-left: 15px;
+    font-size:  16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box1 input:focus,
+.box1 input:valid{
+    border-color: black;
+}
+
+.box2{
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    top: 113%;
+    right: 100%;
+}
+
+.box2 input{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(219, 216, 216);
+    padding-left: 15px;
+    font-size:  16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box2 input:focus,
+.box2 input:valid{
+    border-color: black;
+}
+
+#addrD{
+    position: absolute;
+    top: 104%;
+}
+
+.details{
+    display: block;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+.input-box input{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding-left: 15px;
+    font-size:  16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid{
+    border-color: black;
+}
+
+.option{
+    margin-top: 40px;
+}
+
+.option .option-title{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.option .transport{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.transport label{
+    display: flex;
+    align-items: center;
+}
+
+.transport .dot{
+    height: 18px;
+    width: 18px;
+    background:#d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+}
+
+#dot-1:checked ~ .transport .one,
+#dot-2:checked ~ .transport .two {
+    border-color: #d9d9d9;
+    background: #000000;
+}
+
+.optionbut {
+    padding: 20px;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+.payment {
+    position: absolute;
+    top: 2cm;
+    left: 0.9cm;
+}
+
+.payment-title{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.payment .transportNew{
+    display: flex;
+    /* width: 80%; */
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.transportNew label{
+    display: flex;
+    align-items: center;
+}
+
+.transportNew .dot{
+    height: 18px;
+    width: 18px;
+    background:#d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+}
+
+#dot-3:checked ~ .transportNew .one,
+#dot-4:checked ~ .transportNew .two{
+    border-color: #d9d9d9;
+    background: #000000;
+}
+
+.button{
+    height: 40px;
+    margin: 45px 0;
+    position: relative;
+    top: 11cm;
+}
+
+.button input{
+    height:100%;
+    width:20%;
+    float: right;
+    margin-top: 2%;
+    margin-right: 20%;
+    outline: none;
+    color: rgba(255, 255, 255, 0.641);
+    font-size:18px;
+    font-weight:600;
+    border-radius: 5px;
+    letter-spacing:1px;
+    background: rgba(0, 0, 0, 0.179);
+}
+
+.button input:hover{
+    background-color: rgba(255, 255, 255, 0.859);
+    color: #000000;
+    transition: 0.6s;
+}
+
+.reboot{
+    height:100%;
+    width:20%;
+    margin-top: 10%;
+    margin-left: 20%;
+    position: relative;
+    bottom: 120%;
+    outline: none;
+    font-size:18px;
+    font-weight:600;
+    border-radius: 5px;
+    letter-spacing:1px;
+    background: rgba(0, 0, 0, 0.179);
+}
+
+.reboot a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.641);
+}
+
+.reboot a:hover{
+    color: #000000;
+}
+
+.reboot:hover{
+    background-color: rgba(255, 255, 255, 0.859);
+    transition: 0.6s;
+}
+
+.online_payment{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 12cm;
+}
+
+#deliver {
+    position: relative;
+    top: -1.5cm;
+    left: -0.4cm;
+}
+#addrB {
+    position: relative;
+    top: 10.7cm;
+}
+
+.option {
+    position: relative;
+    top: 10cm;
+}
+
+.c_selection {
+    display: inline;
+    position: relative;
+    top: -3cm;
+    left: 0.1cm;
+}
+
+select {
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size:  16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    width: 4cm;
+}
+
+select:focus {
+    border: 1px solid black;
+    box-shadow: black;
+}
+
+#cN,#sec,#eD {
+    position: relative;
+    right: 13%;
+}
+
+#mobile,#ema {
+    position: relative;
+    top:5cm;
+}
+
+.footer-container{
+    position: absolute;
+    display: inline-block;
+    top: 180%;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-color: #000000;
+}
+.logo-footer{
+    position: relative;
+    height: 40%;
+    width: 12%;
+}
+
+.bxl-facebook-square{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    color: white;
+    opacity: 0.6;
+}
+
+.bxl-facebook-square:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.bxl-instagram{
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    color: white;
+    opacity: 0.6;
+}
+
+.bxl-instagram:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.bxl-twitter{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    color: white;
+    opacity: 0.6;
+}
+
+.bxl-twitter:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.footer-text{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.603);
+    top: 94%;
+    left: 40%;
+}

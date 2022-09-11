@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Kanit:wght@500&family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-container{
+    width: 100%;
+    height: 18vh;
+    background: #e9d6cd;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    top: 1%;
+    left: 27%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: -26%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+header ul li{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-size: 20px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    letter-spacing: 2px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    color: rgb(255, 53, 17);
+}
+
+.body-container{
+    display:flex;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    position: fixed;
+    top: 0%;
+    object-fit: cover;
+    width: 100%;
+    height: 120%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+/* form css */
+.container{
+    height: 71%;
+    margin-bottom: 5%;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(2, 2, 2, 0.542);
+    padding: 25px 30px;
+    border-radius: 5px;
+    top: -12%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: white;
+}
+
+.title{
+    font-size:25px;
+    font-weight: 700
+}
+
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.box1{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.details{
+    display: block;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+.pizzafav{
+    display: block;
+    font-weight: 600;
+}
+
+.user .box1 input{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding-left: 15px;
+    font-size:  16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box1 input:focus,
+.box1 input:valid{
+    border-color: black;
+}
+
+.gendert{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.radio_button{
+    font-size: 16px;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.button{
+    height: 40px;
+    margin: 45px 0;
+}
+
+.button input{
+    position: relative;
+    height:100%;
+    width:20%;
+    margin-top: 5%;
+    margin-left: 20%;
+    color: rgba(255, 255, 255, 0.641);
+    outline: none;
+    font-size:18px;
+    font-weight:600;
+    border-radius: 5px;
+    letter-spacing:1px;
+    background: rgba(0, 0, 0, 0.179);
+}
+
+.button input:hover{
+    background-color: rgba(255, 255, 255, 0.859);
+    color: #000000;
+    transition: 0.6s;
+}
+
+.footer-container{
+    position: absolute;
+    display: inline-block;
+    top: 105%;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.logo-footer{
+    position: relative;
+    height: 40%;
+    width: 12%;
+}
+
+
+.bxl-facebook-square{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    color: white;
+    opacity: 0.6;
+}
+.bxl-facebook-square:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.bxl-instagram{
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    color: white;
+    opacity: 0.6;
+}
+
+.bxl-instagram:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.bxl-twitter{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    color: white;
+    opacity: 0.6;
+}
+
+.bxl-twitter:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.footer-text{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.603);
+    top: 94%;
+    left: 40%;
+}

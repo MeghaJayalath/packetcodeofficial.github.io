@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Pizzeria</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/register.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="images/jpg" href="images/logo.png">
+
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="register.html" target="_self">Sign-in</a></li>
+                    <li><a href="order.html">Place Oder</a></li>
+                    <li><a href="features.html">Animations</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="body-container">
+        <img class="image" src="images/pizza4.jpg" alt="">
+        <div class="container"><!-- form start  -->
+            <div class="title">Registration</div> 
+                <form id="survey" class="form" method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+                    <div class="user">
+                        <div class="box1">
+                            <label for="fullname"></label>
+                            <span class="details">Full Name</span>
+                            <input type="text" name="Fullname" placeholder="Enter your name" id="fullname">
+                        </div>
+                        <div class="box1">
+                            <label for="username"></label>
+                            <span class="details">Username</span>
+                            <input type="text" name="Username" placeholder="Enter your username" id="username">
+                        </div>
+                        <div class="box1">
+                            <label for="email"></label>
+                            <span class="details">Email</span>
+                            <input type="email" name="Email" placeholder="Enter your email" id="email">
+                        </div>
+                        <div class="box1">
+                            <label for="number"></label>
+                            <span class="details">Phone number</span>
+                            <input type="text" name="Number" placeholder="Enter your number" id="number">
+                        </div>
+                        <div class="box1">
+                            <label for="password"></label>
+                            <span class="details">Password</span>
+                            <input type="password" name="Password" placeholder="Enter your password" minlength="8" id="password">
+                        </div>
+                        <div class="box1">
+                            <label for="con_password"></label>
+                            <span class="details">Confirm Password</span>
+                            <input type="password" name="C_password" placeholder="Confirm your password" id="con_password">
+                        </div>
+                    </div>
+                    <div class="pizzafav">
+                        <label for="favPizza">Choose your favourite Pizza</label>
+                        <select name ="choose">
+                            <option value ="Popcorn Veggie">
+                                Popcorn Veggie
+                            </option>
+                            <option value ="Chicken Bacon">
+                                Chicken Bacon
+                            </option> 
+                            <option value ="Cheese Delight">
+                                Cheese Delight
+                            </option>
+                            <option value ="Sea Food Supreme">
+                                Sea Food Supreme
+                            </option>
+                            <option value ="Garlic Pork Delight">
+                                Garlic Pork Delight
+                            </option>   
+                            <option value ="Cheese Crust Fiesta">
+                                Cheese Crust Fiesta
+                            </option>  
+                            <option value ="Sausage Lovers">
+                                Sausage Lovers
+                            </option> 
+                            <option value ="Veggie Fiesta">
+                                Veggie Fiesta
+                            </option> 
+                            <option value ="Beef Lovers">
+                                Beef Lovers
+                            </option> 
+                            <option value ="Chicken Hawaiian">
+                                Chicken Hawaiian
+                            </option> 
+                            <option value ="Hot Butter Prawns">
+                                Hot Butter Prawns
+                            </option> 
+                            <option value ="Double C Fiesta">
+                                Double C Fiesta
+                            </option>  
+                            <option value ="All in One Supreme" selected ="selected">
+                                All in One Supreme
+                            </option> 
+                            <option value ="Butter Mushroom">
+                                Butter Mushroom
+                            </option>        
+                        </select>
+                    </div>
+                    <div class="gender-details">
+                        <span class="gendert"><br>Gender</span>
+                        <div class="radio_button">
+                            <input type="radio" name="gender" value="FeMale" id="female">Female
+                            <input type="radio" name="gender" value="Male" id="male" checked>Male
+                            <input type="radio" name="gender" value="Prefer not to" id="prefer_not_to">Prefer not to
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Register" onclick="return checkforblank()">
+                    </div>
+                </form>
+        </div> <!-- form ends -->
+    </div>
+    <div class="footer-container">
+        <img src="images/logo.png" class="logo-footer" alt="Logo">
+        <p  style="color: rgba(255, 255, 255, 0.479); font-family: 'Rajdhani', sans-serif;"><br> BRUNO PIZZERIA,<br> Green Street, <br> Gold Coast, <br> QLD 4216. <br><br>(03) 6587 2378 <br> (03) 6587 2379 </p>
+
+        <p class="footer-text">&copy; 2022 Bruno Pizzeria. All rights reserved.</p>
+
+        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square bx-md'></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram bx-md'></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter bx-md'></i></a>
+    </div>
+</body>
+</html>

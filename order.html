@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Pizzeria</title>
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/order.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="images/jpg" href="images/logo.png">
+
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="register.html">Sign-in</a></li>
+                    <li><a href="order.html" target="_self">Place Oder</a></li>
+                    <li><a href="features.html">Animations</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="body-container">
+        <img class="image" src="images/pizza4.jpg" alt="">
+        <div class="container"> <!-- form start  -->
+            <div class="title">Order</div>
+            <form id="survey" class="form" method="POST"
+                action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+                <div class="customer-details">
+                    <div class="option">
+                        <input type="radio" name="delivery_method" id="dot-1" value="Delivery" onclick="cd(0)">
+                        <input type="radio" name="delivery_method" id="dot-2" value="Pickup" onclick="cd(1)">
+                        <span class="option-title">Checkout Method</span>
+                        <div class="transport">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="optionbut">Delivery</span>
+                            </label>
+                            <label for="dot-2" id="dil">
+                                <span class="dot two"></span>
+                                <span class="optionbut">Pickup</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <input type="radio" name="Payment" id="dot-3" value="Online" onclick="cash(2)" >
+                        <input type="radio" name="Payment" id="dot-4" value="Cash on Delivery" onclick="cash(3)">
+                        <span class="payment-title">Payment</span>
+                        <div class="transportNew">
+                            <label for="dot-3">
+                                <span class="dot one"></span>
+                                <span class="optionbut">Online</span>
+                            </label>
+                            <label for="dot-4">
+                                <span class="dot two"></span>
+                                <span class="optionbut">Cash on Delivery</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="del" id="deliver">
+                        <div class="box1" id="mobile">
+                            <label for="number"></label>
+                            <span class="details">Phone number</span>
+                            <input type="text" name="Contact" placeholder="Enter your number" id="number">
+                        </div>
+                        <div class="box1" id="ema">
+                            <label for="email"></label>
+                            <span class="details">Email</span>
+                            <input type="text" name="Email" placeholder="Enter your email" id="email">
+                        </div>
+                        <div class="box2">
+                            <span class="details">Postal Code</span>
+                            <input type="text" name="postal_code" placeholder="Postal Code" id="pCode" maxlength=100>
+                        </div>
+                        <div class="box1" id="addrD">
+                            <label for="addressD"></label>
+                            <span class="details">Deliver Address</span>
+                            <input type="text" name="delivery_address" placeholder="Delivery Address" id="addressD">
+                        </div>
+                        <div class="box1" id="addrB">
+                            <label for="addressB"></label>
+                            <span class="details">Billing Address</span>
+                            <input type="text" name="billing_address" placeholder="Billing Address" id="addressB">
+                        </div>
+                    </div>
+                    <div class="online_payment" id="pay">
+                        <div class="c_selection" id="c_selection">
+                            <span class="details">Card Type:</span>
+                            <select name="Card Type" id="card">
+                                <option value="VISA">VISA</option>
+                                <option value="Master Card">Master Card</option>
+                                <option value="American Express">American Express</option>
+                            </select>
+                        </div>
+                        <div class="input-box" id="cN">
+                            <label for="cardName"></label>
+                            <span class="details">Card Name</span>
+                            <input type="text" name="Card Name" placeholder="Card Name" id="cardName">
+                        </div>
+                        <div class="input-box" id="sec">
+                            <label for="cvv"></label>
+                            <span class="details">CVV</span>
+                            <input type="text" name="CVV" placeholder="CVV" id="cvv">
+                        </div>
+                        <div class="input-box" id="eD">
+                            <label for="expDate"></label>
+                            <span class="details">Expire Date</span>
+                            <input type="text" name="Expire Date" placeholder="mm/yy" id="expDate">
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" onclick=" return checkforblank()">
+                    <button class="reboot" onclick="alert('The page will be refresh')"><a href="">Reset</a></button>
+                </div>
+            </form>
+        </div> <!-- form ends -->
+    </div>
+
+    <div class="footer-container">
+        <img src="images/logo.png" class="logo-footer" alt="Logo">
+        <p  style="color: rgba(255, 255, 255, 0.479); font-family: 'Rajdhani', sans-serif;"><br> BRUNO PIZZERIA,<br> Green Street, <br> Gold Coast, <br> QLD 4216. <br><br>(03) 6587 2378 <br> (03) 6587 2379 </p>
+
+        <p class="footer-text">&copy; 2022 Bruno Pizzeria. All rights reserved.</p>
+
+        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square bx-md'></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram bx-md'></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter bx-md'></i></a>
+    </div>
+</body>
+
+</html>
